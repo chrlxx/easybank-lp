@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// General
+body {
+    font-size: 18px;
+    font-weight: 300;
+    color: $dark-blue;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: 400;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+input, button {
+    outline: none;
+    border: 0;
+}
+
+// Custom
+header {
+    display: flex;
+    padding: 20px 12.5%;
+    justify-content: space-between;
+    background-color: $white;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    img {
+        height: 20px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 10px;
+        }
+    }
+
+    button {
+        color: $white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, $lime-green, $bright-cyan);
+    }
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    background: linear-gradient($light-gray, $white);
+
+    .section1 {
+        h1 {
+            font-size: 18px * 3;
+        }
+    }
+
+    .section2 {
+        background-image: url('../images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: 10px;
+        width: 100%;
+
+        img {
+            position: relative;
+            width: 100%;
+            top: -115px;
+        }
+    }
+}
