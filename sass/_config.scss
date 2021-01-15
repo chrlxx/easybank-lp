@@ -6,3 +6,18 @@ $lime-green: hsl(136, 65%, 51%);
 $bright-cyan: hsl(192, 70%, 51%);
 $grayish-blue: hsl(233, 8%, 62%);
 $light-grayish-blue: hsl(220, 16%, 96%);
+
+// Utilities
+%button {
+    color: $white;
+    font-weight: 700;
+    padding: 13.5px 25px;
+    border-radius: 20px;
+    font-family: 'Public Sans', sans-serif;
+    background: linear-gradient(90deg, $lime-green, $bright-cyan);
+
+    &:hover {
+        background: linear-gradient(90deg, $bright-cyan, $lime-green);
+        transition: .5s ease-in-out;
+    }
+}
